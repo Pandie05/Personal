@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guess the movie by its frame">
+    <meta author="Hendry Reyes">
+    <title>Movie Guesser</title>
+
+    <style>
+
+        #header {
+
+            text-align: top;
+            color: white;
+           
+
+        }
+
+        body {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 75vh; 
+            background-color: #2a2828;
+
+        }
+
+        #screen {
+
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 500px;
+            height: 300px;
+            border: 1px solid white;
+
+        }
+
+        #textbox {
+
+            text-align: center;
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="header">
+
+        <h1>Movie Guesser</h1>
+
+    </div>
+
+    <br><br><br><br><br>
+
+    <div id="screen">
+
+        <a href="Ponyo_Pics/Ponyo_001.jpg"></a>
+
+        <script>
+
+            var randImg = document.querySelector("screen")
+
+            var imgArray = []
+
+            imgArray.push('Ponyo_Pics/ponyo1.jpg')
+
+        </script>
+
+    </div>
+
+    <div id="textbox">
+
+        <br><br>
+
+        <input type="text" id="guess" placeholder="Enter your guess here">
+
+        <button id="submit">Submit</button>
+
+    </div>
+    
+</body>
+</html>
