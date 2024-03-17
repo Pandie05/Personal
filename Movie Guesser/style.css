@@ -1,0 +1,35 @@
+#header {
+
+    text-align: top;
+    color: white;
+
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; 
+    background-color: #000000;
+
+}
+
+#screen {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    border: 1px solid white;
+
+}
+
+#textbox {
+
+    text-align: center;
+
+}
+

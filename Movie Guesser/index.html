@@ -5,47 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Guess the movie by its frame">
     <meta author="Hendry Reyes">
+
+    <link rel="stylesheet" href="style.css">
+
     <title>Movie Guesser</title>
-
-    <style>
-
-        #header {
-
-            text-align: top;
-            color: white;
-           
-
-        }
-
-        body {
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 75vh; 
-            background-color: #2a2828;
-
-        }
-
-        #screen {
-
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            width: 500px;
-            height: 300px;
-            border: 1px solid white;
-
-        }
-
-        #textbox {
-
-            text-align: center;
-
-        }
-
-    </style>
 
 </head>
 <body>
@@ -60,15 +23,31 @@
 
     <div id="screen">
 
-        <a href="Ponyo_Pics/Ponyo_001.jpg"></a>
-
         <script>
-
-            var randImg = document.querySelector("screen")
 
             var imgArray = []
 
-            imgArray.push('Ponyo_Pics/ponyo1.jpg')
+            let img1 = new Image()
+            img1.src = 'Ponyo_Pics/Ponyo_001.jpg'
+
+            imgArray.push(img1.src)
+
+
+            let img2 = new Image()
+            img2.src = 'Ponyo_Pics/Ponyo_002.jpg'
+
+            imgArray.push(img2.src)
+
+
+            let img3 = new Image()
+            img3.src = 'Ponyo_Pics/Ponyo_003.jpg'
+
+            imgArray.push(img3.src)
+
+            
+            console.log(imgArray)
+
+            
 
         </script>
 
@@ -78,7 +57,14 @@
 
         <br><br>
 
-        <input type="text" id="guess" placeholder="Enter your guess here">
+        <select id="choice">
+
+            <option >Pick Here!</option>
+            <option >Ponyo</option>
+            <option >Princess Mononoke</option>
+            <option >Spirited Away</option>
+
+        </select>
 
         <button id="submit">Submit</button>
 
