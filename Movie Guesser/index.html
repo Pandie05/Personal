@@ -19,64 +19,11 @@
 
     </div>
 
-    <br><br><br><br><br>
-
     <div id="screen">
 
-        <script>
+        <script src="ponyo.js"></script>
 
-            function getRandomInt(max) {
-
-            return Math.floor(Math.random() * max)
-
-            }
-
-
-            var imgArray = []
-
-            let img1 = new Image()
-            img1.src = 'Ponyo_Pics/Ponyo_001.jpg'
-
-            imgArray.push(img1.src)
-
-
-            let img2 = new Image()
-            img2.src = 'Ponyo_Pics/Ponyo_002.jpg'
-
-            imgArray.push(img2.src)
-
-
-            let img3 = new Image()
-            img3.src = 'Ponyo_Pics/Ponyo_003.jpg'
-
-            imgArray.push(img3.src)
-
-            
-            console.log(imgArray)
-
-            console.log(getRandomInt(3))
-
-            let randomIndex = getRandomInt(3)
-
-            if (randomIndex == 0) {
-
-                document.write('<img id="img" src="' + imgArray[0] + '">')
-
-            } 
-
-            else if (randomIndex == 1) {
-
-                document.write('<img id="img" src="' + imgArray[1] + '">')
-
-            } 
-
-            else if (randomIndex == 2) {
-
-                document.write('<img id="img" src="' + imgArray[2] + '">')
-
-            }
-
-        </script>
+        
 
     </div>
 
@@ -95,29 +42,7 @@
 
         <button id="submit">Submit</button>
 
-        <script>
-
-            let submitButton = document.getElementById('submit')
-
-            submitButton.addEventListener('click', function() {
-
-                let choice = document.getElementById('choice').value
-
-                if (choice == 'Ponyo') {
-
-                    alert('Correct!')
-
-                } 
-
-                else {
-
-                    alert('Incorrect!')
-
-                }
-
-            })
-
-        </script>
+        <script src="submit.js"></script>
 
     </div>
 
@@ -125,7 +50,6 @@
 
     <div id="footer">
 
-        <a href="#header">Back To Top</a>
         <p>Pictures from: <a href="https://film-grab.com" target="_blank">FILMGRAB</a></p>
         <p>&copy;Hendry Reyes</p>
 
