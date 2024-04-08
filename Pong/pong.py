@@ -65,7 +65,7 @@ light_grey = (200,200,200)
 ball_spd_x = 7 * random.choice((1, -1))
 ball_spd_y = 7 * random.choice((1, -1))
 player_speed = 0
-player2_speed = 7
+player2_speed = 12
 
 while True:
 
@@ -76,17 +76,17 @@ while True:
         
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_DOWN:
-                player_speed += 7
+                player_speed += 10
             
             if event.key == pygame.K_UP:
-                player_speed -= 7
+                player_speed -= 10
 
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_DOWN:
-                player_speed -= 7
+                player_speed -= 10
             
             if event.key == pygame.K_UP:
-                player_speed += 7
+                player_speed += 10
             
             
     ball_animation()
