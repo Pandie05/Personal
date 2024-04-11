@@ -11,13 +11,24 @@ body {
 }
 
 header{
-    border-bottom: 2px solid white;
-    padding-bottom: 20px;
+    background-color: green;
 }
 
 header h1{
-    padding: 10px;
     text-align: center;
+}
+
+header ul{
+    display: flex;
+    justify-content: right;
+    margin-right: 50px;
+    list-style-type: none;
+    padding: 20px 0 0 0;
+
+}
+
+header ul li{
+    padding: 30px 20px 0px 20px;
 }
 
 a{
@@ -28,4 +39,8 @@ a{
 
 a #bio{
     padding-right: 50px;
+}
+
+nav{
+    text-align: center;
 }
