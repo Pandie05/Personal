@@ -47,8 +47,8 @@ pygame.init()
 clock = pygame.time.Clock()
 
 #canvas
-scr_w = 1280
-scr_h = 960
+scr_w = 800
+scr_h = 700
 
 scr = pygame.display.set_mode((scr_w, scr_h))
 
