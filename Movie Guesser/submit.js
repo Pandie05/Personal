@@ -8,11 +8,13 @@ let submitButton = document.getElementById('submit')
 
         if (choice == 'Ponyo') {
 
-                alert('Correct!')
+            alert('Correct!')
 
-        } 
+        } else if (choice == 'Pick Here!') {
 
-        else {
+            alert('Please pick a movie!')
+
+        } else {
 
             alert('Incorrect!')
 
